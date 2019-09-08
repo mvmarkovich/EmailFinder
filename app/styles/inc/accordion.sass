@@ -1,0 +1,49 @@
+.accordion
+  background-color: #fff
+
+  & + &
+    margin-top: 1.3rem @md-down .5rem
+
+  + .btn,
+  + .btn + .btn
+    display: @md-down flex
+
+  &--open
+
+    + .btn,
+    + .btn + .btn
+      display: @md-down none
+
+    ^&__title:after
+      transform: scaleY(1) @md scaleY(-1)
+
+    ^&__body
+      display: none @md block
+
+  &__title
+    text: $black 16px 19px 600
+    padding: .7rem 1rem
+    cursor: pointer
+    user-select: none
+    box: center space-between
+    border-bottom: 1px solid #EAEAEA
+
+    &:after
+      content: ""
+      display: block
+      background-image: svg-load("icons/chevron_down.svg", fill: #C9C9C9)
+      background-position: center
+      background-repeat: no-repeat
+      size: 24px
+      transform: @md-down scaleY(-1)
+
+  &__body
+    display: block @md none
+    padding-top: .5rem
+    padding-bottom: .5rem
+
+    &--content
+      padding: 1rem @xl 1rem 1rem 2rem 1rem
+
+  .email__amount
+    text: #F2994A 14px 16px

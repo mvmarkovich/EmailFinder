@@ -1,0 +1,19 @@
+extends layouts/layout.pug
+
+block title
+    title Main | EmailFinder
+
+block content
+    .main-container
+        main.main-block
+            .page__title
+                h1 Results for #Gmail
+                p We have compiled this database from many open sources. It presents users of the most popular email services and some of them have additional information.
+
+            include blocks/interests-categories.pug
+
+            include blocks/pagination.pug
+
+        aside.aside-block
+            include blocks/aside.pug
+            include blocks/aside-menu-block.pug

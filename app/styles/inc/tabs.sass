@@ -1,0 +1,45 @@
+.tabs
+  box:
+  @extend .list-reset
+
+  &--devider
+    border-bottom: $border
+    margin-top: 1.2rem @md 2rem
+    margin-bottom: 1rem @md 1.5rem
+
+  &__item
+    position: relative
+    border-bottom: 1px solid #EAEAEA
+    padding: 0 1rem
+
+    box: space-between center
+
+    &:last-child
+      border-bottom: 0
+
+  &__body
+    padding: 0 1rem
+
+  &__btn
+    padding-bottom: .9rem @md 1.6rem
+    @extend .link-text
+    text: #2771FF 14px 16px
+    text-decoration: underline
+
+  &--vertical
+    flex-direction: column
+
+    ^&__item
+      margin-left: 0
+
+    ^&__btn
+      padding-bottom: 0
+      min-height: 45px
+      width: 100%
+      justify-content: flex-start
+
+[data-tab]
+  display: none
+
+  &.active
+    display: block

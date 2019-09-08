@@ -1,0 +1,26 @@
+extends layouts/layout.pug
+
+block title
+    title Main | EmailFinder
+
+block content
+    .main-container
+        main.main-block
+            .page__title
+                h1 Find an email in the largest database from the biggest providers
+                p We have compiled this database from many open sources. It presents users of the most popular email services and some of them have additional information.
+
+            include blocks/category
+
+            .page__title
+                h2 Somewhat for creating longread and google-friendly content
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat orci nulla pellentesque dignissim enim. Netus et malesuada fames ac. Viverra nibh cras pulvinar mattis. At augue eget arcu dictum. Sem viverra aliquet eget sit amet.
+                p Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Sed velit dignissim sodales ut eu sem integer vitae justo. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.
+                p Lobortis mattis aliquam faucibus purus in massa tempor nec feugiat. Eget velit aliquet sagittis id consectetur. Vivamus at augue eget arcu dictum varius duis at.
+
+        aside.aside-block.aside-block--mobile-visible
+            include blocks/aside.pug
+            include blocks/aside-menu-block.pug
+
+
+

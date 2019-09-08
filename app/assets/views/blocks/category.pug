@@ -1,0 +1,14 @@
+.category
+    .category__head
+        .category__title Email server
+        .category__title Amount of emails
+    ul.category__list
+        each category, i in server
+            li.category__item
+                a.category__link(href="category.html")= category.email
+                .category__amount= category.amount
+                .btn--block
+                    a.btn.btn--background.btn--wide(href="category.html") view all
+
+
+

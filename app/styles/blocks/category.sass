@@ -1,0 +1,51 @@
+.category
+  margin: 1.7rem 0 @md 2rem 0 @xl 2.5rem 0
+
+  &__head
+    background-color: #F9F9F9
+    box:
+    padding: 9px 6px 9px 12px
+    &:after
+      content: ''
+      display: block
+      width: 100px
+
+  &__title
+    text: 14px 16px 600
+    width: 42%
+    padding-right: @md-down 10px
+
+  &__list
+    @extend .list-reset
+
+  &__item
+    padding: 5px 6px 5px 12px
+    box: center
+    flex-wrap: nowrap
+    background-color: #fff
+
+    border-top: 1px solid #EAEAEA
+
+    &:nth-child(even)
+      background-color: #F9F9F9
+
+    .btn--block
+      width: 100px
+      justify-content: flex-end
+
+  &__link
+    width: 42%
+    @extend .link-text
+    text: @md-down 13px 22px
+
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+  &__amount
+    width: 42%
+    text: @md-down 13px 22px
+
+
+
+

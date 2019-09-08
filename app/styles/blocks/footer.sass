@@ -1,0 +1,44 @@
+.footer
+
+  &__container
+    padding: @md-down 0 1rem
+    border-top: 1px solid #DFDFDF
+
+  &__nav
+    padding: 2rem 0 @md-down 1.5rem 0 .7rem
+
+    &-list
+      @extend .list-reset
+      box:
+      justify-content: center @md-down space-between
+      flex-wrap: @md-down wrap
+
+    &-item
+      margin-right: 0 @xl 2.5rem @md 1.7rem
+      margin-bottom: @md-down .7rem
+      width: @md-down 33%
+
+    &-link
+      @extend .link-text
+      color: #99A5AB
+
+  &__disclaimer
+    text-align: center @md-down left
+
+    &-text
+      text: #99A5AB 13px 19px 500
+      margin: 0
+
+    a
+      text: #99A5AB
+
+      &:active
+        text: #FF0000
+
+  &__copy
+    text-align: center
+    padding: 1.5rem 0
+
+    &-text
+      text: #99A5AB 13px 19px 500
+      margin: 0

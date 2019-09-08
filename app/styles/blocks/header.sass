@@ -1,0 +1,180 @@
+.header
+  background: url("../img/content/b-header.png") no-repeat center / cover
+
+  &__logo
+    background: svg-load("icons/logo.svg") no-repeat left top / contain
+    size: 130px 38px @md 153px 43px
+    min-width: 130px @md 176px
+    position: relative
+    display: block
+
+  &__navigation
+    box: flex space-between center
+    padding: 1rem 0 @md-down .5rem 1rem
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+
+  &__nav
+    display: none @md block
+
+    &-list
+      @extend .list-reset
+      box: flex
+
+    &-item
+
+      margin-right: 0 @xl 2.5rem @md 1.7rem
+
+      &:last-child
+        margin-right: 0
+
+    &-link
+      color: #fff
+
+      &:hover
+        opacity: .8
+
+      &:active
+        opacity: .6
+
+  &__search
+    padding: 1.5rem 0 1.1rem @md-down 1rem 1rem 1.3rem
+
+    &-form
+      box: flex space-between
+      align-items: flex-start
+      flex-wrap: nowrap
+
+    &-input
+      border-radius: 3px
+      background-color: #fff
+      text: #000 17px 43px @md-down 15px 35px
+      padding: 0 .6rem
+      width: 100%
+      outline: 0
+      border: 1px solid #fff
+
+      &::placeholder
+        text: #A5A5A5
+
+    &-block
+      width: 100%
+
+    &-descr
+      text-align: center
+      display: none @md block
+      margin-top: .5rem
+      text: #fff @xl 14px 16px @md 13px
+
+    &-submit
+      background-color: #FF0000
+      border-radius: 3px
+      padding: 0 1.25rem
+      text: #fff 17px 20px 500
+      letter-spacing: normal
+      text-transform: none
+      min-width: 233px @md-down 1px
+      width: @md-down 37px
+      text-indent: @md-down -9999px
+      margin-left: 1.25rem @md-down .5rem
+      position: relative
+      height: 45px @md-down 37px
+
+      &:hover
+        background-color: #E53935
+
+      &:active
+        background-color: #B71C1C
+
+      .icon-search
+        margin-left: 1rem @md-down 0
+
+        position: @md-down absolute 6px null null 7px
+
+  &__panel
+    display: @md none
+    position: @md-down relative
+    top: @md-down 4px
+
+  &__burger
+    display: @md none
+    size: 32px
+
+  &--mobile-menu
+
+    ^&__container:after
+      display: none
+
+    ^&__navigation
+      position: relative
+      z-index: 996
+      background-color: #261C3F
+
+    ^&__nav
+      position: @md-down absolute 56px 0 null null
+      width: @md-down 205px
+      display: @md-down block
+      height: 100vh
+      background-color: #261C3F
+
+      &-item
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+
+      &-link
+        position: relative
+        padding-left: 1.5rem
+        line-height: 2.8rem
+        display: block
+
+        &:after
+          content: ''
+          background-size: contain
+          background-repeat: no-repeat
+          background-position: center
+          background-image: svg-load("icons/chevron_right.svg")
+          size: 13px
+
+          position: absolute 16px null null 0
+
+      &-list
+        margin-top: 2.8rem
+        flex-direction: column
+        padding: 0 1rem
+        border-top: 1px solid rgba(255, 255, 255, 0.1)
+
+    .mobile-menu-lang
+      display: flex
+
+
+.mobile-menu-cover
+  position: fixed
+  top: 0
+  right: 0
+  bottom: -82px
+  left: 0
+  z-index: 995
+  background: rgba(38, 50, 56, .85)
+  display: none
+
+
+.icon-search:after
+  content: ""
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+
+  background-image: svg-load("icons/search.svg")
+  size: 24px
+
+.overflow-hidden
+  overflow: hidden
+
+        
+      
+
+
+
+
+
+
+
+

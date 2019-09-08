@@ -1,0 +1,113 @@
+.btn
+  text: $pseudo-neutral-900 $body-small none
+  line-height: unset
+  min-height: 1.5rem
+  padding: 0 .7rem
+  border-radius: 4px
+  background: transparent
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  font-family: $font
+  outline: 0
+  cursor: pointer
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+
+  &--wide
+    padding: * 1rem
+
+  &--input
+    display: flex
+    width: 100%
+    min-height: 40px
+
+  &--light
+    margin: 0
+    padding: 0
+    outline: 0
+    border: 0
+    background: transparent
+    cursor: pointer
+
+  &--block
+    display: flex
+    width: 100%
+
+  &--big
+    min-height: 40px
+
+  &--large
+    min-height: 48px
+
+  &--pseudo
+    @extend .btn--light
+    text-transform: none
+    text: 500 13px
+    letter-spacing: normal
+
+  &--hash--tag
+    min-height: 35px
+    margin-right: .5rem
+    margin-bottom: .5rem
+
+  &--background
+    background-color: #5992FF
+    color: #ffffff
+
+    &:hover
+      color: #fff
+      background-color: #2771FF
+
+    &:active
+      color: #fff
+      background-color: #1565C0
+
+  &:disabled, &--disabled
+    text: $pseudo-neutral-300 !important
+    border-color: $pseudo-neutral-100 !important
+    cursor: default
+
+  &--arrow-down,
+  &--search,
+  &--burger,
+  &--cross,
+  &--cross-white
+    &:after
+      content: ""
+      display: block
+      background-repeat: no-repeat
+      background-position: center
+
+  &--burger
+    &:after
+      background-image: svg-load("icons/burger.svg", fill: $neutral)
+      size: 32px
+
+    &:hover:after
+      background-image: svg-load("icons/burger.svg", fill: rgba(255, 255, 255, .8))
+
+    &:active:after
+      background-image: svg-load("icons/burger.svg", fill: rgba(255, 255, 255, .6))
+
+  &--cross
+    &:after
+      background-image: svg-load("icons/cross.svg", fill: $neutral)
+      size: 32px
+
+    &:hover:after
+      background-image: svg-load("icons/cross.svg", fill: rgba(255, 255, 255, .8))
+
+    &:active:after
+      background-image: svg-load("icons/cross.svg", fill: rgba(255, 255, 255, .6))
+
+  &--cross-white
+    &:after
+      background-image: svg-load("icons/cross.svg", fill: #fff)
+      size: 32px
+
+    &:hover:after
+      background-image: svg-load("icons/cross.svg", fill: #fff)
+
+    &:active:after
+      background-image: svg-load("icons/cross.svg", fill: #fff)

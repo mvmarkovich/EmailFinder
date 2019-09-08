@@ -1,0 +1,12 @@
+.footer
+    .footer__container.container
+        nav.footer__nav
+            ul.footer__nav-list
+                each category, i in nav
+                    li.footer__nav-item
+                        a.footer__nav-link(target="_blank", href="" + category.link)= category.name
+        .footer__disclaimer
+            p.footer__disclaimer-text Disclaimer: This data base was collected from different open sources. We are not responsible for these sources.
+            p.footer__disclaimer-text <a href="#!"> Contact us </a> if you need to delete your email from the list.
+        .footer__copy
+            p.footer__copy-text © 2019 EmailFinder. All rights reserved.

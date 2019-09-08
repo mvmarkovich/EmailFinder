@@ -1,0 +1,16 @@
+.accordion.accordion--open
+    .accordion__title Grouped by interests
+    .accordion__body
+        ul.tabs.tabs--vertical
+            each item, i in interest_group
+                li.tabs__item
+                    button.tabs__btn.btn.btn--light= item.name
+                    .email__amount= item.amount
+
+.accordion.accordion--open
+    .accordion__title Grouped by mail server
+    .accordion__body
+        ul.tabs.tabs--vertical
+            each item, i in server_group
+                li.tabs__item
+                    button.tabs__btn.btn.btn--light= item.name

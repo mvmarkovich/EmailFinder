@@ -1,0 +1,36 @@
+extends layouts/layout.pug
+
+block title
+    title Email | EmailFinder
+
+block content
+    .main-container
+        main.main-block
+            .page__title
+                h1 Mikle.robinson@gmail.com
+                p Here some detailed information from open sources about this email. If the email is your own and you want to delete this from our data base, please, contact us.
+
+            .content-block
+                h3 Detailed information
+
+                ul.info__list
+                    li.info__item
+                        .info__name Email server
+                        .info__right
+                            a.link-text(href="#!") Gmail
+                    li.info__item
+                        .info__name Interests
+                        .info__right
+                            .btn--block
+                                a.btn.btn--background.btn--wide.btn--hash--tag(href="#!") Gambling
+                                a.btn.btn--background.btn--wide.btn--hash--tag(href="#!") Finance
+
+
+
+            .content-block
+                h3 Comments
+                p Here will be placed a comments widget (discuss/cackle)
+
+        aside.aside-block
+            include blocks/aside.pug
+            include blocks/aside-menu-block.pug

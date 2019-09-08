@@ -1,0 +1,25 @@
+.content-block
+
+  .info
+
+    &__list
+      margin: 1.3rem 0 @md 2rem 0
+      @extend .list-reset
+
+    &__item
+      box: flex flex-start
+      padding: 1rem .75rem
+      border-bottom: 1px solid #EAEAEA
+
+      &:first-child
+        border-top: 1px solid #EAEAEA
+
+      &:last-child
+        border-bottom: none
+
+      .btn--block
+        flex-wrap: wrap
+
+    &__name
+      text: 16px 19px 500
+      min-width: 120px @xl 200px @md 160px

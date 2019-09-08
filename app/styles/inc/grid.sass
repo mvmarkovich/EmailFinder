@@ -1,0 +1,87 @@
+.container
+  max-width: $container-sm-px
+  margin: * auto
+
+@media $md
+  .container
+    max-width: $container-md-px
+
+@media $lg
+  .container
+    max-width: $container-lg-px
+
+@media $xl
+  .container
+    max-width: $container-xl-px
+
+.page-container
+  margin-top: .5rem @md 1.3rem
+
+.content-container
+  box: space-between wrap
+  padding: 1rem * @md 2rem *
+  position: relative
+  z-index: 96
+
+.main-block
+  width: 100% @md 505px @xl 800px
+  background-color: #fff
+  padding: 1rem @md 1rem 1.5rem @xl 1rem 2rem
+  order: @md-down 2
+
+.aside-block
+  max-width: 240px @xl 330px
+  width: 100%
+  display: @md-down none
+
+  &--mobile-visible
+    display: @md-down block
+    order: @md-down 1
+    max-width: @md-down 100%
+    margin-bottom: @md-down .5rem
+
+.main-container
+  box: space-between
+  flex-wrap: wrap @md nowrap
+  padding-bottom: 1rem @xl 2rem
+  position: relative
+  z-index: 96
+
+.top-story-block
+  max-width: 100% @md 272px @xl 416px
+  margin-right: 0 @md 1rem @xl 2rem
+  margin-bottom: 1rem @md 0
+
+.news-block
+  max-width: 100% @md 448px @xl 672px
+
+.main-aside-container
+  box: space-between
+  flex-wrap: wrap @md nowrap
+
+.main-news-block
+  @extend .main-block
+  border-top: $border
+  padding-top: 1rem @xl 1.5rem
+
+.aside-news-block
+  @extend .aside-block
+  margin-top: 0 !important
+
+.main-category-block
+  @extend .main-block
+  padding-top: 1rem @md 2.1rem @xl 1.5rem
+
+.aside-category-block
+  @extend .aside-block
+  padding-top: 2.5rem @xl 1.5rem
+  margin-top: 0 !important
+
+.aside-menu-block
+  max-width: 100% @md 240px @xl 320px
+  width: 100%
+  padding-top: 1rem @md 2.2rem @xl 1.5rem
+
+aside
+  position: relative
+  z-index: 7
