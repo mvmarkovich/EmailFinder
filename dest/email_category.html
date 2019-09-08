@@ -16,9 +16,9 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
   </head>
-  <body>
+  <body><!— the start of header —>
     <div class="header">
-      <div class="header__container container">
+      <div class="header__container container"><!— the start of nav —>
         <nav class="header__navigation"><a class="header__logo" href="main.html"></a>
           <div class="header__nav">
             <ul class="header__nav-list">
@@ -34,7 +34,8 @@
           <div class="header__panel">
             <button class="header__burger btn btn--light btn--burger"></button>
           </div>
-        </nav>
+        </nav><!— the start of nav—>
+<!— the start of search —>
         <div class="header__search">
           <form class="header__search-form" action="/" method="GET">
             <div class="header__search-block">
@@ -44,10 +45,10 @@
               <div class="icon-search"></div>
             </button>
           </form>
-        </div>
+        </div><!— the end of search —>
       </div>
     </div>
-    <div class="mobile-menu-cover"></div>
+    <div class="mobile-menu-cover"></div><!— the end of header —>
     <div class="page-container container">
       <div class="main-container">
         <main class="main-block">
@@ -75,12 +76,12 @@
             <p>Here will be placed a comments widget (discuss/cackle)</p>
           </div>
         </main>
-        <aside class="aside-block">
+        <aside class="aside-block"><!— the start of card —>
           <section class="card card--something">
             <div class="something">
               <div class="something__content-square something--desktop--visible"><img src="img/something/square.png" alt="something-square"></div>
             </div>
-          </section>
+          </section><!— the end of card —><!— the start of accordion —>
           <div class="accordion accordion--open">
             <div class="accordion__title">Grouped by interests</div>
             <div class="accordion__body">
@@ -111,7 +112,8 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div><!— the end of accordion —>
+<!— the start of accordion —>
           <div class="accordion accordion--open">
             <div class="accordion__title">Grouped by mail server</div>
             <div class="accordion__body">
@@ -136,12 +138,12 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div><!— the end of accordion —>
         </aside>
       </div>
-    </div>
+    </div><!— the start of footer —>
     <div class="footer">
-      <div class="footer__container container">
+      <div class="footer__container container"><!— the start of nav —>
         <nav class="footer__nav">
           <ul class="footer__nav-list">
             <li class="footer__nav-item"><a class="footer__nav-link" target="_blank" href="https://gmail.com">Gmail</a></li>
@@ -152,16 +154,18 @@
             <li class="footer__nav-item"><a class="footer__nav-link" target="_blank" href="/other.html">Other</a></li>
             <li class="footer__nav-item"><a class="footer__nav-link" target="_blank" href="/contacts.html">Contacts</a></li>
           </ul>
-        </nav>
+        </nav><!— the end of nav —>
+<!— the start of disclaimer —>
         <div class="footer__disclaimer">
           <p class="footer__disclaimer-text">Disclaimer: This data base was collected from different open sources. We are not responsible for these sources.</p>
           <p class="footer__disclaimer-text"><a href="#!"> Contact us </a> if you need to delete your email from the list.</p>
-        </div>
+        </div><!— the end of disclaimer —>
+<!— the start of copyright —>
         <div class="footer__copy">
           <p class="footer__copy-text">© 2019 EmailFinder. All rights reserved.</p>
-        </div>
+        </div><!— the end of copyright —>
       </div>
-    </div>
+    </div><!— the end of footer —>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
   </body>

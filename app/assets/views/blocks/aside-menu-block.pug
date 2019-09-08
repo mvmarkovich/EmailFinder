@@ -1,3 +1,4 @@
+<!— the start of accordion —>
 .accordion.accordion--open
     .accordion__title Grouped by interests
     .accordion__body
@@ -6,7 +7,9 @@
                 li.tabs__item
                     button.tabs__btn.btn.btn--light= item.name
                     .email__amount= item.amount
+<!— the end of accordion —>
 
+<!— the start of accordion —>
 .accordion.accordion--open
     .accordion__title Grouped by mail server
     .accordion__body
@@ -14,3 +17,4 @@
             each item, i in server_group
                 li.tabs__item
                     button.tabs__btn.btn.btn--light= item.name
+<!— the end of accordion —>

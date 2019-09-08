@@ -20,13 +20,20 @@ html(lang="en" dir="ltr")
       link(href="styles/main.css" rel="stylesheet")
 
   body
+    <!— the start of header —>
 
     include ../inc/header.pug
+
+    <!— the end of header —>
 
     .page-container.container
       block content
 
+    <!— the start of footer —>
+
     include ../inc/footer.pug
+
+    <!— the end of footer —>
 
     block foot
       script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")

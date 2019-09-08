@@ -1,3 +1,4 @@
+<!— the start of category —>
 .category
     .category__head
         .category__title Email
@@ -5,7 +6,8 @@
     ul.category__list
         each category, i in interests
             li.category__item
-                a.category__link(href="category.html")= category.email
+                a.category__link(href="email_category.html")= category.email
                 .category__amount= category.name
                 .btn--block
                     a.btn.btn--background.btn--wide(href="email_category.html") view
+<!— the end of category —>
