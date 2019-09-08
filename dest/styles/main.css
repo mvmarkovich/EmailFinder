@@ -275,16 +275,16 @@ a,button {
   border-color: #1A237E;
 }
 
-.category__link,.footer__nav-link,.link-text,.tabs__btn {
+.category__link,.footer__nav-link,.link-text,.page__title a,.tabs__btn {
   color: #2771FF;
   text-decoration: underline;
 }
 
-.category__link:hover,.footer__nav-link:hover,.link-text:hover,.tabs__btn:hover {
+.category__link:hover,.footer__nav-link:hover,.link-text:hover,.page__title a:hover,.tabs__btn:hover {
   color: #5992FF;
 }
 
-.category__link:active,.footer__nav-link:active,.link-text:active,.tabs__btn:active {
+.category__link:active,.footer__nav-link:active,.link-text:active,.page__title a:active,.tabs__btn:active {
   color: #1565C0;
 }
 
